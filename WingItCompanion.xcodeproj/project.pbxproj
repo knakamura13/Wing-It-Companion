@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF2A41721E17B38800E512BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A41711E17B38800E512BB /* AppDelegate.swift */; };
+		BF2A41741E17B38800E512BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A41731E17B38800E512BB /* ViewController.swift */; };
+		BF2A41771E17B38800E512BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2A41751E17B38800E512BB /* Main.storyboard */; };
+		BF2A41791E17B38800E512BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF2A41781E17B38800E512BB /* Assets.xcassets */; };
+		BF2A417C1E17B38800E512BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2A417A1E17B38800E512BB /* LaunchScreen.storyboard */; };
+		BF2A41871E17B38800E512BB /* WingItCompanionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A41861E17B38800E512BB /* WingItCompanionTests.swift */; };
+		BF2A41921E17B38800E512BB /* WingItCompanionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A41911E17B38800E512BB /* WingItCompanionUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF2A41831E17B38800E512BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF2A41661E17B38800E512BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF2A416D1E17B38800E512BB;
+			remoteInfo = WingItCompanion;
+		};
+		BF2A418E1E17B38800E512BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF2A41661E17B38800E512BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF2A416D1E17B38800E512BB;
+			remoteInfo = WingItCompanion;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BF2A416E1E17B38800E512BB /* WingItCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WingItCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF2A41711E17B38800E512BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF2A41731E17B38800E512BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF2A41761E17B38800E512BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF2A41781E17B38800E512BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF2A417B1E17B38800E512BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF2A417D1E17B38800E512BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF2A41821E17B38800E512BB /* WingItCompanionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WingItCompanionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF2A41861E17B38800E512BB /* WingItCompanionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WingItCompanionTests.swift; sourceTree = "<group>"; };
+		BF2A41881E17B38800E512BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF2A418D1E17B38800E512BB /* WingItCompanionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WingItCompanionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF2A41911E17B38800E512BB /* WingItCompanionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WingItCompanionUITests.swift; sourceTree = "<group>"; };
+		BF2A41931E17B38800E512BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF2A416B1E17B38800E512BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF2A417F1E17B38800E512BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF2A418A1E17B38800E512BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF2A41651E17B38800E512BB = {
+			isa = PBXGroup;
+			children = (
+				BF2A41701E17B38800E512BB /* WingItCompanion */,
+				BF2A41851E17B38800E512BB /* WingItCompanionTests */,
+				BF2A41901E17B38800E512BB /* WingItCompanionUITests */,
+				BF2A416F1E17B38800E512BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF2A416F1E17B38800E512BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF2A416E1E17B38800E512BB /* WingItCompanion.app */,
+				BF2A41821E17B38800E512BB /* WingItCompanionTests.xctest */,
+				BF2A418D1E17B38800E512BB /* WingItCompanionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF2A41701E17B38800E512BB /* WingItCompanion */ = {
+			isa = PBXGroup;
+			children = (
+				BF2A41711E17B38800E512BB /* AppDelegate.swift */,
+				BF2A41731E17B38800E512BB /* ViewController.swift */,
+				BF2A41751E17B38800E512BB /* Main.storyboard */,
+				BF2A41781E17B38800E512BB /* Assets.xcassets */,
+				BF2A417A1E17B38800E512BB /* LaunchScreen.storyboard */,
+				BF2A417D1E17B38800E512BB /* Info.plist */,
+			);
+			path = WingItCompanion;
+			sourceTree = "<group>";
+		};
+		BF2A41851E17B38800E512BB /* WingItCompanionTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF2A41861E17B38800E512BB /* WingItCompanionTests.swift */,
+				BF2A41881E17B38800E512BB /* Info.plist */,
+			);
+			path = WingItCompanionTests;
+			sourceTree = "<group>";
+		};
+		BF2A41901E17B38800E512BB /* WingItCompanionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BF2A41911E17B38800E512BB /* WingItCompanionUITests.swift */,
+				BF2A41931E17B38800E512BB /* Info.plist */,
+			);
+			path = WingItCompanionUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF2A416D1E17B38800E512BB /* WingItCompanion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF2A41961E17B38800E512BB /* Build configuration list for PBXNativeTarget "WingItCompanion" */;
+			buildPhases = (
+				BF2A416A1E17B38800E512BB /* Sources */,
+				BF2A416B1E17B38800E512BB /* Frameworks */,
+				BF2A416C1E17B38800E512BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WingItCompanion;
+			productName = WingItCompanion;
+			productReference = BF2A416E1E17B38800E512BB /* WingItCompanion.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF2A41811E17B38800E512BB /* WingItCompanionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF2A41991E17B38800E512BB /* Build configuration list for PBXNativeTarget "WingItCompanionTests" */;
+			buildPhases = (
+				BF2A417E1E17B38800E512BB /* Sources */,
+				BF2A417F1E17B38800E512BB /* Frameworks */,
+				BF2A41801E17B38800E512BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF2A41841E17B38800E512BB /* PBXTargetDependency */,
+			);
+			name = WingItCompanionTests;
+			productName = WingItCompanionTests;
+			productReference = BF2A41821E17B38800E512BB /* WingItCompanionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BF2A418C1E17B38800E512BB /* WingItCompanionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF2A419C1E17B38800E512BB /* Build configuration list for PBXNativeTarget "WingItCompanionUITests" */;
+			buildPhases = (
+				BF2A41891E17B38800E512BB /* Sources */,
+				BF2A418A1E17B38800E512BB /* Frameworks */,
+				BF2A418B1E17B38800E512BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF2A418F1E17B38800E512BB /* PBXTargetDependency */,
+			);
+			name = WingItCompanionUITests;
+			productName = WingItCompanionUITests;
+			productReference = BF2A418D1E17B38800E512BB /* WingItCompanionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF2A41661E17B38800E512BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Kyle Nakamura";
+				TargetAttributes = {
+					BF2A416D1E17B38800E512BB = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7GDSF452LB;
+						ProvisioningStyle = Automatic;
+					};
+					BF2A41811E17B38800E512BB = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7GDSF452LB;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BF2A416D1E17B38800E512BB;
+					};
+					BF2A418C1E17B38800E512BB = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7GDSF452LB;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BF2A416D1E17B38800E512BB;
+					};
+				};
+			};
+			buildConfigurationList = BF2A41691E17B38800E512BB /* Build configuration list for PBXProject "WingItCompanion" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF2A41651E17B38800E512BB;
+			productRefGroup = BF2A416F1E17B38800E512BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF2A416D1E17B38800E512BB /* WingItCompanion */,
+				BF2A41811E17B38800E512BB /* WingItCompanionTests */,
+				BF2A418C1E17B38800E512BB /* WingItCompanionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF2A416C1E17B38800E512BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF2A417C1E17B38800E512BB /* LaunchScreen.storyboard in Resources */,
+				BF2A41791E17B38800E512BB /* Assets.xcassets in Resources */,
+				BF2A41771E17B38800E512BB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF2A41801E17B38800E512BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF2A418B1E17B38800E512BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF2A416A1E17B38800E512BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF2A41741E17B38800E512BB /* ViewController.swift in Sources */,
+				BF2A41721E17B38800E512BB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF2A417E1E17B38800E512BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF2A41871E17B38800E512BB /* WingItCompanionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF2A41891E17B38800E512BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF2A41921E17B38800E512BB /* WingItCompanionUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF2A41841E17B38800E512BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF2A416D1E17B38800E512BB /* WingItCompanion */;
+			targetProxy = BF2A41831E17B38800E512BB /* PBXContainerItemProxy */;
+		};
+		BF2A418F1E17B38800E512BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF2A416D1E17B38800E512BB /* WingItCompanion */;
+			targetProxy = BF2A418E1E17B38800E512BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF2A41751E17B38800E512BB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF2A41761E17B38800E512BB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF2A417A1E17B38800E512BB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF2A417B1E17B38800E512BB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF2A41941E17B38800E512BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF2A41951E17B38800E512BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF2A41971E17B38800E512BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7GDSF452LB;
+				INFOPLIST_FILE = WingItCompanion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kylenakamura.WingItCompanion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BF2A41981E17B38800E512BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7GDSF452LB;
+				INFOPLIST_FILE = WingItCompanion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kylenakamura.WingItCompanion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		BF2A419A1E17B38800E512BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7GDSF452LB;
+				INFOPLIST_FILE = WingItCompanionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kylenakamura.WingItCompanionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WingItCompanion.app/WingItCompanion";
+			};
+			name = Debug;
+		};
+		BF2A419B1E17B38800E512BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7GDSF452LB;
+				INFOPLIST_FILE = WingItCompanionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kylenakamura.WingItCompanionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WingItCompanion.app/WingItCompanion";
+			};
+			name = Release;
+		};
+		BF2A419D1E17B38800E512BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 7GDSF452LB;
+				INFOPLIST_FILE = WingItCompanionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kylenakamura.WingItCompanionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = WingItCompanion;
+			};
+			name = Debug;
+		};
+		BF2A419E1E17B38800E512BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 7GDSF452LB;
+				INFOPLIST_FILE = WingItCompanionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kylenakamura.WingItCompanionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = WingItCompanion;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF2A41691E17B38800E512BB /* Build configuration list for PBXProject "WingItCompanion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF2A41941E17B38800E512BB /* Debug */,
+				BF2A41951E17B38800E512BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF2A41961E17B38800E512BB /* Build configuration list for PBXNativeTarget "WingItCompanion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF2A41971E17B38800E512BB /* Debug */,
+				BF2A41981E17B38800E512BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BF2A41991E17B38800E512BB /* Build configuration list for PBXNativeTarget "WingItCompanionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF2A419A1E17B38800E512BB /* Debug */,
+				BF2A419B1E17B38800E512BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BF2A419C1E17B38800E512BB /* Build configuration list for PBXNativeTarget "WingItCompanionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF2A419D1E17B38800E512BB /* Debug */,
+				BF2A419E1E17B38800E512BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF2A41661E17B38800E512BB /* Project object */;
+}
