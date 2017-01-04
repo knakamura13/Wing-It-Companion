@@ -27,7 +27,6 @@ class CreateAccountVC: UIViewController {
     // Constants
     let ref = FIRDatabase.database().reference().child("users")
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

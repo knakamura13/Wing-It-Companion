@@ -95,6 +95,11 @@ class RegisterVC: UIViewController, UITextFieldDelegate {
         registerVCEmail = emailField.text
         registerVCPassword = passwordField.text
         
+        // Send user a confirmation email
+        FIRAuth.auth()?.currentUser?.sendEmailVerification(completion: { (error) in
+            // ...
+        })
+        
         performSegue(withIdentifier: "register2Segue", sender: nil)
     }
     

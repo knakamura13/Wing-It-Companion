@@ -45,7 +45,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         // All of this is required to check if user has set a username on the CreateAccountVC.
         FIRDatabase.database().reference().child("users").child(FIRAuth.auth()!.currentUser!.uid).observeSingleEvent(of: .value, with: { (snapshot) in
             for rest in snapshot.children.allObjects as! [FIRDataSnapshot] {
-                if rest.key.contains("display-name") {
+                if rest.key.contains("display-name") {                          // NOTE: Must ensure that display-name is not nil. Currently not checked for.
                     print("KYLE: User has previously set a display-name.")
                     self.performSegue(withIdentifier: "bypassSegue1", sender: nil)
                 }
@@ -58,6 +58,21 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         if userRequiresUsername {
             self.performSegue(withIdentifier: "regularSignInSegue", sender: nil)
         }
+    }
+    
+    // This function is also required for Firebase Auth
+    func firebaseAuth(_ credential: FIRAuthCredential) {
+        FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in
+            if error != nil {
+                print("KYLE: Unable to authenticate with Firebase. - \(error!)")
+            } else {
+                print("KYLE: Successfully authenticated with Firebase.")
+                if let user = user {
+                    let userData = ["provider" : credential.provider]
+                    self.completeSignIn(id: (user.uid), userData: userData)
+                }
+            }
+        })
     }
     
     // This code is required for Facebook Auth (Use for any "sign in with facebook" button
@@ -76,21 +91,6 @@ class LoginVC: UIViewController, UITextFieldDelegate {
                 self.firebaseAuth(credential)
             }
         }
-    }
-    
-    // This function is also required for Firebase Auth
-    func firebaseAuth(_ credential: FIRAuthCredential) {
-        FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in
-            if error != nil {
-                print("KYLE: Unable to authenticate with Firebase. - \(error!)")
-            } else {
-                print("KYLE: Successfully authenticated with Firebase.")
-                if let user = user {
-                    let userData = ["provider" : credential.provider]
-                    self.completeSignIn(id: (user.uid), userData: userData)
-                }
-            }
-        })
     }
     
     // Function used for Email Authentication

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>138328127728-08vsnj0h5ks5igupchub0ii9nv7af6rf.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.138328127728-08vsnj0h5ks5igupchub0ii9nv7af6rf</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDmMNOn5oL8vkBLAYOKFy9dYIBtYpHkYH0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>138328127728</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.kylenakamura.WingItCompanion</string>
+	<key>PROJECT_ID</key>
+	<string>wing-it-companion</string>
+	<key>STORAGE_BUCKET</key>
+	<string>wing-it-companion.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:138328127728:ios:ca867ca0caac68b6</string>
+	<key>DATABASE_URL</key>
+	<string>https://wing-it-companion.firebaseio.com</string>
+</dict>
+</plist>

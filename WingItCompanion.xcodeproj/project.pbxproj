@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE5C4C14FDE915D6F45DF026 /* Pods_WingItCompanion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B04291212EB2D078075C93 /* Pods_WingItCompanion.framework */; };
+		BF29F8321E1CA62700A15B91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF29F8311E1CA62700A15B91 /* GoogleService-Info.plist */; };
 		BF2A41721E17B38800E512BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A41711E17B38800E512BB /* AppDelegate.swift */; };
 		BF2A41741E17B38800E512BB /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A41731E17B38800E512BB /* LoginVC.swift */; };
 		BF2A41771E17B38800E512BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2A41751E17B38800E512BB /* Main.storyboard */; };
@@ -38,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		67B04291212EB2D078075C93 /* Pods_WingItCompanion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WingItCompanion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D10475C5E7B0B9DB4A97D2E /* Pods-WingItCompanion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WingItCompanion.release.xcconfig"; path = "Pods/Target Support Files/Pods-WingItCompanion/Pods-WingItCompanion.release.xcconfig"; sourceTree = "<group>"; };
+		99A13C95E23386BC92B9189C /* Pods-WingItCompanion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WingItCompanion.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WingItCompanion/Pods-WingItCompanion.debug.xcconfig"; sourceTree = "<group>"; };
+		BF29F8311E1CA62700A15B91 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BF2A416E1E17B38800E512BB /* WingItCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WingItCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2A41711E17B38800E512BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF2A41731E17B38800E512BB /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -62,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE5C4C14FDE915D6F45DF026 /* Pods_WingItCompanion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +89,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AEF4D4D90218378359E8F45E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67B04291212EB2D078075C93 /* Pods_WingItCompanion.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BF2A41651E17B38800E512BB = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +104,8 @@
 				BF2A41851E17B38800E512BB /* WingItCompanionTests */,
 				BF2A41901E17B38800E512BB /* WingItCompanionUITests */,
 				BF2A416F1E17B38800E512BB /* Products */,
+				F9BF8D6E1383911E457AE198 /* Pods */,
+				AEF4D4D90218378359E8F45E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				BF2A417D1E17B38800E512BB /* Info.plist */,
+				BF29F8311E1CA62700A15B91 /* GoogleService-Info.plist */,
 				BF2A41711E17B38800E512BB /* AppDelegate.swift */,
 				BF2A41A71E17B44B00E512BB /* Constants.swift */,
 			);
@@ -185,6 +203,15 @@
 			name = Services;
 			sourceTree = "<group>";
 		};
+		F9BF8D6E1383911E457AE198 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99A13C95E23386BC92B9189C /* Pods-WingItCompanion.debug.xcconfig */,
+				8D10475C5E7B0B9DB4A97D2E /* Pods-WingItCompanion.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -192,9 +219,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF2A41961E17B38800E512BB /* Build configuration list for PBXNativeTarget "WingItCompanion" */;
 			buildPhases = (
+				CA586EBBDF8A53092813F61F /* [CP] Check Pods Manifest.lock */,
 				BF2A416A1E17B38800E512BB /* Sources */,
 				BF2A416B1E17B38800E512BB /* Frameworks */,
 				BF2A416C1E17B38800E512BB /* Resources */,
+				C65F4D8DA12A88A37970A81F /* [CP] Embed Pods Frameworks */,
+				21CCD88088B31E9341C45D3E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -296,6 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF2A417C1E17B38800E512BB /* LaunchScreen.storyboard in Resources */,
+				BF29F8321E1CA62700A15B91 /* GoogleService-Info.plist in Resources */,
 				BF2A41791E17B38800E512BB /* Assets.xcassets in Resources */,
 				BF2A41771E17B38800E512BB /* Main.storyboard in Resources */,
 			);
@@ -316,6 +347,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21CCD88088B31E9341C45D3E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WingItCompanion/Pods-WingItCompanion-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C65F4D8DA12A88A37970A81F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WingItCompanion/Pods-WingItCompanion-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA586EBBDF8A53092813F61F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BF2A416A1E17B38800E512BB /* Sources */ = {
@@ -477,6 +556,7 @@
 		};
 		BF2A41971E17B38800E512BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99A13C95E23386BC92B9189C /* Pods-WingItCompanion.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7GDSF452LB;
@@ -490,6 +570,7 @@
 		};
 		BF2A41981E17B38800E512BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D10475C5E7B0B9DB4A97D2E /* Pods-WingItCompanion.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7GDSF452LB;
@@ -578,6 +659,7 @@
 				BF2A41981E17B38800E512BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF2A41991E17B38800E512BB /* Build configuration list for PBXNativeTarget "WingItCompanionTests" */ = {
 			isa = XCConfigurationList;
@@ -586,6 +668,7 @@
 				BF2A419B1E17B38800E512BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF2A419C1E17B38800E512BB /* Build configuration list for PBXNativeTarget "WingItCompanionUITests" */ = {
 			isa = XCConfigurationList;
@@ -594,6 +677,7 @@
 				BF2A419E1E17B38800E512BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
