@@ -96,15 +96,17 @@ class RegisterVC: UIViewController, UITextFieldDelegate {
         registerVCPassword = passwordField.text
         
         // Send user a confirmation email
-        FIRAuth.auth()?.currentUser?.sendEmailVerification(completion: { (error) in
-            // ...
-        })
+//        FIRAuth.auth()?.currentUser?.sendEmailVerification(completion: { (error) in
+//            // ...
+//        })
         
         performSegue(withIdentifier: "register2Segue", sender: nil)
     }
     
     // This function is required for Facebook Auth (Use for any Facebook sign-in button)
     @IBAction func FBButtonTapped(_ sender: Any) {
+        authenticatedWithEmail = false
+        authenticatedWithFacebook = false
         let facebookLogin = FBSDKLoginManager()
         facebookLogin.logIn(withReadPermissions: ["email"], from: self) { (result, error) in
             if error != nil {
@@ -136,6 +138,8 @@ class RegisterVC: UIViewController, UITextFieldDelegate {
     
     // Function for Email Authentication
     @IBAction func registerTapped(_ sender: Any) {
+        authenticatedWithEmail = true
+        authenticatedWithFacebook = false
         if let email = emailField.text, let pwd = passwordField.text {
             FIRAuth.auth()?.signIn(withEmail: email, password: pwd, completion: { (user, error) in
                 if error == nil {
@@ -144,6 +148,7 @@ class RegisterVC: UIViewController, UITextFieldDelegate {
                 } else {
                     //  CREATE NEW USER IF THE USER DID NOT EXIST
                     if self.passwordField.text == self.passwordConfirmField.text && !(self.passwordField.text == "" || self.passwordField.text == nil) {
+                        
                         FIRAuth.auth()?.createUser(withEmail: email, password: pwd, completion: { (user, error) in
                             if error != nil {
                                 print("Kyle: Unable to authenticate with Firebase using email.")

@@ -403,7 +403,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Uq-GZ-e1M" customClass="UIControl">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile2" translatesAutoresizingMaskIntoConstraints="NO" id="7Hj-E2-4jN" customClass="RealCircleImage" customModule="WingItCompanion" customModuleProvider="target">
+                                    <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile2" translatesAutoresizingMaskIntoConstraints="NO" id="7Hj-E2-4jN" customClass="CircleImage" customModule="WingItCompanion" customModuleProvider="target">
                                         <rect key="frame" x="112" y="75" width="150" height="150"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -425,7 +425,7 @@
                                         </connections>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Gkn-wr-VaZ">
-                                        <rect key="frame" x="72" y="318.5" width="230" height="70"/>
+                                        <rect key="frame" x="72" y="290.5" width="230" height="110"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name*" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hSH-U5-g1v">
                                                 <rect key="frame" x="0.0" y="0.0" width="230" height="30"/>
@@ -447,10 +447,20 @@
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                             </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Job Title*" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="AUv-D7-Bq6">
+                                                <rect key="frame" x="0.0" y="80" width="230" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="230" id="Igl-bY-upo"/>
+                                                    <constraint firstAttribute="height" constant="30" id="ZmV-cM-mPf"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                            </textField>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9rl-Zu-09H">
-                                        <rect key="frame" x="72" y="436.5" width="230" height="110"/>
+                                        <rect key="frame" x="72" y="448.5" width="230" height="110"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="gca-ui-VPZ">
                                                 <rect key="frame" x="0.0" y="0.0" width="230" height="30"/>
@@ -485,13 +495,13 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Info" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqK-7c-Hec">
-                                        <rect key="frame" x="72" y="408.5" width="94" height="20"/>
+                                        <rect key="frame" x="72" y="420.5" width="94" height="20"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <color key="textColor" red="0.081049822270000002" green="0.2011127472" blue="0.35494700070000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1VJ-Bn-5wo" customClass="Rounded10View" customModule="WingItCompanion" customModuleProvider="target">
-                                        <rect key="frame" x="72" y="576.5" width="230" height="50"/>
+                                        <rect key="frame" x="72" y="588.5" width="230" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="StN-bu-Cgg">
                                                 <rect key="frame" x="0.0" y="0.0" width="230" height="50"/>
@@ -528,7 +538,7 @@
                                     <constraint firstItem="9rl-Zu-09H" firstAttribute="centerX" secondItem="3Uq-GZ-e1M" secondAttribute="centerX" id="eRT-BL-op4"/>
                                     <constraint firstItem="Gkn-wr-VaZ" firstAttribute="centerX" secondItem="3Uq-GZ-e1M" secondAttribute="centerX" id="t1K-dG-KOi"/>
                                     <constraint firstItem="jqK-7c-Hec" firstAttribute="top" secondItem="Gkn-wr-VaZ" secondAttribute="bottom" constant="20" id="uIo-AA-h5t"/>
-                                    <constraint firstItem="Gkn-wr-VaZ" firstAttribute="top" secondItem="yB1-5C-OGs" secondAttribute="bottom" constant="67.5" id="w57-d3-JaZ"/>
+                                    <constraint firstItem="Gkn-wr-VaZ" firstAttribute="top" secondItem="yB1-5C-OGs" secondAttribute="bottom" constant="40" id="w57-d3-JaZ"/>
                                 </constraints>
                                 <connections>
                                     <action selector="backgroundTapped:" destination="3Gn-oP-hXo" eventType="touchDown" id="Plm-Zl-xON"/>
@@ -545,15 +555,25 @@
                     </view>
                     <connections>
                         <outlet property="emailField" destination="gca-ui-VPZ" id="gQo-7c-1Tm"/>
+                        <outlet property="jobTitleField" destination="AUv-D7-Bq6" id="UUA-dk-Lnh"/>
                         <outlet property="locationField" destination="Mbb-Ci-Dqx" id="jLf-A6-Oqg"/>
                         <outlet property="nameField" destination="hSH-U5-g1v" id="VK5-Tq-L2k"/>
                         <outlet property="phoneField" destination="5IM-qf-JbL" id="n2t-hd-JN9"/>
+                        <outlet property="userProfileImg" destination="7Hj-E2-4jN" id="u2T-MP-P0e"/>
                         <outlet property="websiteField" destination="V9H-ZM-wcg" id="hPW-L1-Bj6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qqa-Tj-dJ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="UPI-y6-Jur" userLabel="Profile Recognizer"/>
-                <tapGestureRecognizer id="Az7-dA-swW" userLabel="Profile Label Recognizer"/>
+                <tapGestureRecognizer id="UPI-y6-Jur" userLabel="Profile Recognizer">
+                    <connections>
+                        <action selector="profilePicturePressed:" destination="3Gn-oP-hXo" id="j6H-Z3-Jhd"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Az7-dA-swW" userLabel="Profile Label Recognizer">
+                    <connections>
+                        <action selector="profileLabelPressed:" destination="3Gn-oP-hXo" id="JQB-vj-cAW"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="9" y="446"/>
         </scene>
@@ -566,6 +586,6 @@
         <image name="twitterIcon" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="tpL-vl-UNB"/>
+        <segue reference="9ky-Zo-6xL"/>
     </inferredMetricsTieBreakers>
 </document>

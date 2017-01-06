@@ -20,6 +20,7 @@ var authenticatedWithFacebook = false
 var authenticatedWithEmail = false
 
 class LoginVC: UIViewController, UITextFieldDelegate {
+    
     // Outlets
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!

@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>138328127728-08vsnj0h5ks5igupchub0ii9nv7af6rf.apps.googleusercontent.com</string>
+	<string>766260557416-224d0ak6oaj0ill4v2qeus7grl641185.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.138328127728-08vsnj0h5ks5igupchub0ii9nv7af6rf</string>
+	<string>com.googleusercontent.apps.766260557416-224d0ak6oaj0ill4v2qeus7grl641185</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDmMNOn5oL8vkBLAYOKFy9dYIBtYpHkYH0</string>
+	<string>AIzaSyAd9oH5KShxXNRcwo1KcEiWjfN7yZlxXjM</string>
 	<key>GCM_SENDER_ID</key>
-	<string>138328127728</string>
+	<string>766260557416</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.kylenakamura.WingItCompanion</string>
 	<key>PROJECT_ID</key>
-	<string>wing-it-companion</string>
+	<string>wing-it-dd1c8</string>
 	<key>STORAGE_BUCKET</key>
-	<string>wing-it-companion.appspot.com</string>
+	<string>wing-it-dd1c8.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:138328127728:ios:ca867ca0caac68b6</string>
+	<string>1:766260557416:ios:ca867ca0caac68b6</string>
 	<key>DATABASE_URL</key>
-	<string>https://wing-it-companion.firebaseio.com</string>
+	<string>https://wing-it-dd1c8.firebaseio.com</string>
 </dict>
 </plist>

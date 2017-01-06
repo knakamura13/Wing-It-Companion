@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BE5C4C14FDE915D6F45DF026 /* Pods_WingItCompanion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B04291212EB2D078075C93 /* Pods_WingItCompanion.framework */; };
-		BF29F8321E1CA62700A15B91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF29F8311E1CA62700A15B91 /* GoogleService-Info.plist */; };
 		BF2A41721E17B38800E512BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A41711E17B38800E512BB /* AppDelegate.swift */; };
 		BF2A41741E17B38800E512BB /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A41731E17B38800E512BB /* LoginVC.swift */; };
 		BF2A41771E17B38800E512BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF2A41751E17B38800E512BB /* Main.storyboard */; };
@@ -20,6 +19,8 @@
 		BF2A41A81E17B44B00E512BB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A41A71E17B44B00E512BB /* Constants.swift */; };
 		BF2A41AA1E17B5E700E512BB /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A41A91E17B5E700E512BB /* RegisterVC.swift */; };
 		BF2A41AC1E17B60D00E512BB /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2A41AB1E17B60D00E512BB /* CreateAccountVC.swift */; };
+		BF8D47D61E1CBCB10069EBC2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF8D47D51E1CBCB10069EBC2 /* GoogleService-Info.plist */; };
+		BFC2FCA51E1F8091003A3149 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC2FCA41E1F8091003A3149 /* CircleImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +44,6 @@
 		67B04291212EB2D078075C93 /* Pods_WingItCompanion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WingItCompanion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D10475C5E7B0B9DB4A97D2E /* Pods-WingItCompanion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WingItCompanion.release.xcconfig"; path = "Pods/Target Support Files/Pods-WingItCompanion/Pods-WingItCompanion.release.xcconfig"; sourceTree = "<group>"; };
 		99A13C95E23386BC92B9189C /* Pods-WingItCompanion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WingItCompanion.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WingItCompanion/Pods-WingItCompanion.debug.xcconfig"; sourceTree = "<group>"; };
-		BF29F8311E1CA62700A15B91 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BF2A416E1E17B38800E512BB /* WingItCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WingItCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2A41711E17B38800E512BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF2A41731E17B38800E512BB /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -61,6 +61,8 @@
 		BF2A41A71E17B44B00E512BB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BF2A41A91E17B5E700E512BB /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		BF2A41AB1E17B60D00E512BB /* CreateAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		BF8D47D51E1CBCB10069EBC2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BFC2FCA41E1F8091003A3149 /* CircleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 		BF2A41A01E17B3E200E512BB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BFC2FCA41E1F8091003A3149 /* CircleImage.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -188,7 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				BF2A417D1E17B38800E512BB /* Info.plist */,
-				BF29F8311E1CA62700A15B91 /* GoogleService-Info.plist */,
+				BF8D47D51E1CBCB10069EBC2 /* GoogleService-Info.plist */,
 				BF2A41711E17B38800E512BB /* AppDelegate.swift */,
 				BF2A41A71E17B44B00E512BB /* Constants.swift */,
 			);
@@ -325,8 +328,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF8D47D61E1CBCB10069EBC2 /* GoogleService-Info.plist in Resources */,
 				BF2A417C1E17B38800E512BB /* LaunchScreen.storyboard in Resources */,
-				BF29F8321E1CA62700A15B91 /* GoogleService-Info.plist in Resources */,
 				BF2A41791E17B38800E512BB /* Assets.xcassets in Resources */,
 				BF2A41771E17B38800E512BB /* Main.storyboard in Resources */,
 			);
@@ -404,6 +407,7 @@
 				BF2A41A61E17B42500E512BB /* DataService.swift in Sources */,
 				BF2A41741E17B38800E512BB /* LoginVC.swift in Sources */,
 				BF2A41AC1E17B60D00E512BB /* CreateAccountVC.swift in Sources */,
+				BFC2FCA51E1F8091003A3149 /* CircleImage.swift in Sources */,
 				BF2A41721E17B38800E512BB /* AppDelegate.swift in Sources */,
 				BF2A41A81E17B44B00E512BB /* Constants.swift in Sources */,
 				BF2A41AA1E17B5E700E512BB /* RegisterVC.swift in Sources */,
