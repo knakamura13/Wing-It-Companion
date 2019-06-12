@@ -1,6 +1,6 @@
 {
   "name": "SwiftKeychainWrapper",
-  "version": "3.0.1",
+  "version": "3.4.0",
   "summary": "Wrapper for the iOS Keychain written in Swift.",
   "description": "A simple wrapper for the iOS Keychain to allow you to use it in a similar fashion to UserDefaults. Supports Access Groups. Written in Swift.'",
   "module_name": "SwiftKeychainWrapper",
@@ -12,9 +12,14 @@
   "platforms": {
     "ios": "8.0"
   },
+  "swift_versions": [
+    "4.2",
+    "5.0"
+  ],
   "source": {
     "git": "https://github.com/jrendel/SwiftKeychainWrapper.git",
-    "tag": "3.0.1"
+    "tag": "3.4.0"
   },
-  "source_files": "SwiftKeychainWrapper/*.{h,swift}"
+  "source_files": "SwiftKeychainWrapper/*.{h,swift}",
+  "swift_version": "5.0"
 }

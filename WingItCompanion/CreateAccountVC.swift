@@ -12,7 +12,7 @@ import FBSDKCoreKit
 import FBSDKLoginKit
 import SwiftKeychainWrapper
 
-class CreateAccountVC: UIViewController,  UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
+class CreateAccountVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
     
     // Outlets
     @IBOutlet weak var nameField: UITextField!
@@ -39,6 +39,57 @@ class CreateAccountVC: UIViewController,  UIImagePickerControllerDelegate, UINav
         imagePicker = UIImagePickerController()
         imagePicker.allowsEditing = true    // Allow user to move picture around and crop
         imagePicker.delegate = self
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        nameField.delegate = self
+        locationField.delegate = self
+        emailField.delegate = self
+        phoneField.delegate = self
+        websiteField.delegate = self
+        jobTitleField.delegate = self
+        
+        // Keyboard observers
+        NotificationCenter.default.addObserver(self, selector: #selector(CreateAccountVC.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(CreateAccountVC.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+    }
+    
+    // Keyboard view-moving functions
+    func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height * 0.7
+            }
+        }
+    }
+    func keyboardWillHide(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y != 0{
+                self.view.frame.origin.y += keyboardSize.height * 0.7
+            }
+        }
+    }
+    
+    // Jump from usernameField to passwordField to passwordConfirm then hide the keyboard
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == nameField {
+            locationField.becomeFirstResponder()
+        } else if textField == locationField {
+            jobTitleField.becomeFirstResponder()
+        } else if textField == jobTitleField {
+            emailField.becomeFirstResponder()
+        } else if textField == emailField {
+            phoneField.becomeFirstResponder()
+        }
+        else {
+            nameField.resignFirstResponder()
+            locationField.resignFirstResponder()
+            emailField.resignFirstResponder()
+            phoneField.resignFirstResponder()
+            websiteField.resignFirstResponder()
+            jobTitleField.resignFirstResponder()
+        }
+        return true
     }
     
     func segueIsValid() -> Bool {
